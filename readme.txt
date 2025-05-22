@@ -4,7 +4,7 @@ Data/MiniNet/ contains excitatory-only (E) or excitatory-inhibitory (E-I) neural
 
 dV/dt = [(E-V)+R*(I+I_ampa+I_ahp)]/tau, (1)
 
-where V is the neuronal membrane potential, E is the resting membrane potential, R is the membrane resistance, I is the external current, I_ampa is the synaptic current (Eq. 2), I_ahp is the hyperpolarisation-activated current (Eq. 3,4), and tau is the membrane time constant. A spike is registered when V crosses the threshold T=-55 mV, after which V resets to -70 mV.
+where V is the neuronal membrane potential, E is the resting membrane potential, R is the membrane resistance, I is the external current, I_ampa is the synaptic current (Eq. 2), I_ahp is the hyperpolarisation-activated current (Eq. 3,4), and tau=100 ms is the membrane time constant. A spike is registered when V crosses the threshold T=-55 mV, after which V resets to -70 mV.
 
 All networks have 20 neurons, out of which only 5 receive external current. Neuron parameters were set as follows: E=-66±3 mV, R=2.25±0.75 MOhm, tau=100ms.
 
