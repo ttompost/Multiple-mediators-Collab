@@ -12,7 +12,7 @@ Simulation time = 200 ms.
 Simulation time step = 0.1 ms.
 ODE system solved with the 4th-order Runge-Kutta method.
 
-External input I (Eq. 1) had four shapes: step-pulse, ramp-and-hold, double ramp and hold and frozen noise. For shapes of the first three inputs, see below. For explanation of the fourth input, see Zeldenrust et al (2017): https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2017.00049/full.
+External input I (Eq. 1) had four shapes: step-pulse, ramp-and-hold, double ramp-and-hold and frozen noise. For shapes of the first three inputs, see below. For explanation of the fourth input, see Zeldenrust et al (2017): https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2017.00049/full.
 
   _______
 _|       |_ (step-pulse)
