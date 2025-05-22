@@ -24,7 +24,7 @@ _/       \_ (ramp-and-hold)
 _/  \_/  \_ (double ramp-and-hold)
 
 
-The three inputs from above had a maximal amplitude of 120 uA/cm2.
+The three inputs from above had a maximal amplitude of 120 uA/cm2., Stimulus onset was set to t=20 ms and offset to t=180 ms.
 
 Neurons were randomly connected with 50% sparseness (i.e., 50% of all possible connections existed in the population, assuming 1 synapse per neuronal pair). Synaptic connectivity was modelled as: 
 
