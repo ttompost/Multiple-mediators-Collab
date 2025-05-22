@@ -4,12 +4,13 @@ Data/MiniNet/ contains excitatory-only (E) or excitatory-inhibitory (E-I) neural
 
 dV/dt = [(E-V)+R*(I+I_ampa+I_ahp)]/tau, (1)
 
-where V is the neuronal membrane potential, E is the resting membrane potential, R is the membrane resistance, I is the external current, I_ampa is the synaptic current (Eq. 2), I_ahp is the hyperpolarisation-activated current (Eq. 3,4), and tau=100 ms is the membrane time constant. A spike is registered when V crosses the threshold T=-55 mV, after which V resets to -70 mV.
+where V is the neuronal membrane potential, E is the resting membrane potential, R is the membrane resistance, I is the external current, I_ampa is the synaptic current (Eq. 2), I_ahp is the hyperpolarisation-activated current (Eq. 3,4), and tau is the membrane time constant. A spike is registered when V crosses the threshold T=-55 mV, after which V resets to -70 mV.
 
 All networks have 20 neurons, out of which only 5 receive external current. Neuron parameters were set as follows: E=-66±3 mV, R=2.25±0.75 MOhm, tau=100ms.
 
 Simulation time = 200 ms.
 Simulation time step = 0.1 ms.
+ODE system solved with the 4th-order Runge-Kutta method.
 
 External input I (Eq. 1) had four shapes: step-pulse, ramp-and-hold, double ramp and hold and frozen noise. For shapes of the first three inputs, see below. For explanation of the fourth input, see Zeldenrust et al (2017): https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2017.00049/full.
 
@@ -22,6 +23,8 @@ _/       \_ (ramp-and-hold)
   __   __
 _/  \_/  \_ (double ramp-and-hold)
 
+
+The three inputs from above had a maximal amplitude of 120 uA/cm2.
 
 Neurons were randomly connected with 50% sparseness (i.e., 50% of all possible connections existed in the population, assuming 1 synapse per neuronal pair). Synaptic connectivity was modelled as: 
 
